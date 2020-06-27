@@ -97,8 +97,8 @@ p {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 50% !important;
-    margin-top: 3% !important;
+    width: 40% !important;
+    margin-top: 2% !important;
     text-align: left !important;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -120,7 +120,7 @@ p {
 
 @media screen and (min-height: 768px) {
   .container {
-    margin-top: 15% !important;
+    margin-top: 12% !important;
   }
 }
 
