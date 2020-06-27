@@ -102,11 +102,13 @@ p {
     text-align: left !important;
     display: grid;
     grid-template-columns: 50% 50%;
+    border-radius: 5px;
   }
 
   .join {
     grid-column-start: 1;
     grid-column-end: 3;
+    border-radius: 5px 5px 0px 0px;
   }
 
   .pricing {
