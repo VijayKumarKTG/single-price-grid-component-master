@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: var(--lightGray);
+}
+
+.container {
+  width: 80% !important;
+  border-radius: 5px;
+  box-shadow: 0px 12px 37px var(--grayishBlue);
+  padding: 0px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.join {
+  background-color: #ffffff;
+}
+
+.join h2 {
+  color: var(--cyan);
+}
+
+.guarantee {
+  color: var(--brightYellow) !important;
+  font-weight: bold;
+}
+
+.join p {
+  color: var(--grayishBlue);
+}
+
+.pricing {
+  color: var(--lightGray);
+  background-color: var(--cyan);
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 23px;
+  vertical-align: bottom;
+}
+
+.month {
+  opacity: 0.7;
+  line-height: 15px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.pricing button {
+  background-color: var(--brightYellow);
+  border: none;
+}
+
+.why {
+  background-color: hsl(179, 47%, 52%);
+  color: var(--lightGray);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.why ul {
+  list-style-type: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50% !important;
+    margin-top: 5% !important;
+    text-align: left !important;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .join {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .pricing {
+    border-radius: 0px 0px 0px 5px;
+  }
+
+  .why {
+    border-radius: 0px 0px 5px 0px;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .container {
+    margin-top: 15% !important;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  .container {
+    margin-top: 30% !important;
+  }
+}
